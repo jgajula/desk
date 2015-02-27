@@ -3,6 +3,8 @@
 This repository demonstrates knowledge of ruby on rails and front end technologies by building an application which consumes Desk.com API and
 provides the following features
 
+Checkout the live application at https://lit-harbor-1107.herokuapp.com/
+
        1. List the available case filters and allow a user to click on one.
        2. Get a list of cases available in the selected case filter and present them with their labels.
        3. Get a list of labels in the site and present them.
