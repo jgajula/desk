@@ -1,0 +1,25 @@
+development:
+  site: https://jagadeeshgajula.desk.com
+  version: 2
+  api_key: 6nKNSj8XJmIxnGLymw3g
+  api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
+  access_token: ItaIwb4zr6eo2Eib4EPg
+  access_token_secret: YUZJrzSKr4LjTTdNJMHOz2fwsTMTAbjpyypRcizm
+
+
+test:
+  site: https://jagadeeshgajula.desk.com
+  version: 2
+  api_key: 6nKNSj8XJmIxnGLymw3g
+  api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
+  access_token: ItaIwb4zr6eo2Eib4EPg
+  access_token_secret: YUZJrzSKr4LjTTdNJMHOz2fwsTMTAbjpyypRcizm
+
+
+production:
+  site: https://jagadeeshgajula.desk.com
+  version: 2
+  api_key: 6nKNSj8XJmIxnGLymw3g
+  api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
+  access_token: ItaIwb4zr6eo2Eib4EPg
+  access_token_secret: YUZJrzSKr4LjTTdNJMHOz2fwsTMTAbjpyypRcizm
