@@ -1,4 +1,5 @@
-What is it?
+# What is it?
+
 This repository demonstrates knowledge of ruby on rails and front end technologies by building an application which consumes Desk.com API and
 provide the following features
 
@@ -8,7 +9,7 @@ provide the following features
        4. Create a label and add it to the list of labels.
        5. Assign a label to a case.
 
-Technologies Used
+# Technologies Used
 
        1. Ruby
        2. Ruby on Rails
@@ -21,7 +22,7 @@ Technologies Used
        9. Heroku
 
 
-Key Features
+# Key Features
 
        1. Modularized ruby and rails code
        2. Good test coverage using Rspec
@@ -33,5 +34,34 @@ Key Features
        8. Knowledge of cloud deployments demonstrated(heroku)
 
 
-![alt tag](http://url/to/img.png)
+# Filters and Cases
+
+![alt tag](http://postimg.org/image/95w1dynef/)
+
+        - This page lists the available case filters and allow a user to click on one.
+        - This page lists the available cases on right side for a selected filter
+
+# List labels for a case
+
+![alt tag](http://postimg.org/image/ktq38icjb/)
+
+        - This page lets you expand a particular case to read title and description
+        - This page lets you see assigned labels for the expanded case
+
+# Assign a label to a case
+
+![alt tag](http://postimg.org/image/iey7o2waf/)
+
+        - This page lets you assign a label to the expanded case
+
+
+# Show available labels
+
+![alt tag](http://postimg.org/image/aidqfuktz/)
+
+        - This page lists all the available labels
+        - This page lets you add a new label
+
+
+
 
