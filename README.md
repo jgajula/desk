@@ -1,7 +1,7 @@
 # What is it?
 
 This repository demonstrates knowledge of ruby on rails and front end technologies by building an application which consumes Desk.com API and
-provide the following features
+provides the following features
 
        1. List the available case filters and allow a user to click on one.
        2. Get a list of cases available in the selected case filter and present them with their labels.
@@ -36,28 +36,28 @@ provide the following features
 
 # Filters and Cases
 
-![alt tag](http://postimg.org/image/95w1dynef/)
+![alt tag](https://openmerchantaccount.com/img/Screen%20Shot%202015-02-26%20at%209.30.39%20AM.png)
 
         - This page lists the available case filters and allow a user to click on one.
         - This page lists the available cases on right side for a selected filter
 
 # List labels for a case
 
-![alt tag](http://postimg.org/image/ktq38icjb/)
+![alt tag](https://openmerchantaccount.com/img/Screen%20Shot%202015-02-26%20at%209.30.54%20AM.png)
 
         - This page lets you expand a particular case to read title and description
         - This page lets you see assigned labels for the expanded case
 
 # Assign a label to a case
 
-![alt tag](http://postimg.org/image/iey7o2waf/)
+![alt tag](https://openmerchantaccount.com/img/Screen%20Shot%202015-02-26%20at%209.31.03%20AM.png)
 
         - This page lets you assign a label to the expanded case
 
 
 # Show available labels
 
-![alt tag](http://postimg.org/image/aidqfuktz/)
+![alt tag](https://openmerchantaccount.com/img/Screen%20Shot%202015-02-26%20at%209.31.17%20AM.png)
 
         - This page lists all the available labels
         - This page lets you add a new label
