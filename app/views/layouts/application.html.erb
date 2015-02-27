@@ -4,18 +4,18 @@
   <title>EasyDesk</title>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-  <![endif]-->
-
+  <![endif]-->  
+  
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-
+  <%= csrf_meta_tags %>  
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div id="container">
     <%= render "layouts/nav" %>
-
+    
     <div id="flash_message">
       <% flash.each do |name, msg| %>
         <div class="alert alert-<%= name == :notice ? "success" : "danger" %>">
@@ -23,10 +23,10 @@
         </div>
       <% end %>
     </div>
-
+    
     <%= yield %>
-
-
+    
+    
     <%= render "layouts/templates"%>
   </div>
 </body>

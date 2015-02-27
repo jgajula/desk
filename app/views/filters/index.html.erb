@@ -1,0 +1,11 @@
+<div id="filters" class="col-md-3">
+  <ul class="nav nav-pills nav-stacked">
+    <% @filters.each do |f| %>
+       <li class="<%= present_filter(f.id) %>"><%= link_to f.name, filter_path(f.id), class: "filter_link" %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div id="filter_cases" class="col-md-9">
+  <%= render "cases" %>
+</div>

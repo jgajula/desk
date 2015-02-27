@@ -1,0 +1,42 @@
+<div class="list-group">
+  <% if @cases.blank? %>
+    There is no case in this filter
+  <% else %>
+    <div class="panel-group" id="accordion">
+      <% @cases.each do |c| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#case_<%= c.id %>">
+                <%= c.subject %>
+              </a>
+            </h4>
+          </div>
+          <div id="case_<%= c.id %>" class="panel-collapse collapse">
+            <div class="panel-body">
+              <%= c.blurb %>
+
+              <% labels = available_labels(c.labels) %>
+              <% unless labels.blank? %>
+                <div class="case_new_label">
+                  <%= form_tag case_path(c.id) do %>
+                    <%= label_tag "labels", "Label: " %>
+                    <%= select_tag "labels", options_from_collection_for_select(labels, :name, :name), include_blank: true, class: "case_label_select", id: "case_labels_#{c.id}" %>
+                  <% end %>
+                </div>
+              <% end %>
+
+              <div class="case_labels">
+                <% c.labels.each do |l| %>
+                  <span class="label label-info"><%= l %></span>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     <% end %>
+    </div>
+  <% end %>
+</div>
+
+
