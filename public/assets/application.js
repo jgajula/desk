@@ -27314,32 +27314,6 @@ var styleDirective = valueFn({
 
 })(window, document);
 angular.element(document).find('head').append('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\\:form{display:block;}</style>');
-var app = angular.module("MyApp", []);
-
-app.controller("MyCtrl", function($scope) {
-  $scope.somethings = [
-    { name: "Peter",   age: 20 },
-    { name: "Pablo",   age: 55 },
-    { name: "Linda",   age: 20 },
-    { name: "Marta",   age: 37 },
-    { name: "Othello", age: 20 },
-    { name: "Markus",  age: 32 }
-  ];
-
-  $scope.loadLabels = function(){
-    $http.get("/lables").success(function(data){
-      console.log(data);
-      $scope.lables = data;
-    }).error(function(){
-      alert("an unexpected error occured, please try again!");
-    });
-  };
-
-  $scope.filterFunction = function(element) {
-    return element.name.match(/^Ma/) ? true : false;
-  };
-
-});
 (function() {
   jQuery(function() {
     $("a[rel~=popover], .has-popover").popover();
@@ -30176,4 +30150,22 @@ var Handlebars = (function() {
 
 
 
-;
+
+var app = angular.module("LabelApp", []);
+
+app.controller("LabelCtrl", function($scope, $http) {
+
+  $http.get("/labels").success(function(data){
+    var new_labels = $.map(data,function(entry){
+      return {"name" : entry.data.name};
+    });
+    $scope.labels = new_labels;
+  }).error(function(){
+    alert("an unexpected error occured, please try again!");
+  });
+
+  $scope.filterFunction = function(element) {
+    return element.name.match(/^Ma/) ? true : false;
+  };
+
+});

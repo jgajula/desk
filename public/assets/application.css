@@ -7411,3 +7411,15 @@ a {
 .label-info {
   background-color: #009ddc;
 }
+
+/* line 9, ../../app/assets/stylesheets/labels.css.scss */
+#labels_title {
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+/* line 14, ../../app/assets/stylesheets/labels.css.scss */
+.label-row {
+  float: left;
+  margin: 10px;
+}
