@@ -2,6 +2,10 @@ class LabelsController < ApplicationController
 
   def index
     @labels = Label.fetch()
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render :json => @labels }
+    end
   end
 
   def create

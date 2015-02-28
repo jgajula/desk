@@ -19,23 +19,24 @@
 
 <div class="col-md-6">
 
-  <div class="page-header">
-    <h3>List of Labels</h3>
-  </div>
-
-  <% if @labels.blank? %>
-    You don't have any label
-  <% else %>
-    <% @labels.in_groups_of(Label::GROUP, false) do |labels| %>
-    <div class="row">
-      <% labels.each do |l| %>
-        <div class="col-md-4">
-          <h3><span class="label label-info"><%= l.name %></span></h3>
+    <div ng-app="LabelApp">
+      <div ng-controller="LabelCtrl">
+        <div class="page-header">
+          <form class="form-inline">
+            <span id="labels_title">List of Labels</span>
+            <input ng-model="query" type="text" placeholder="Filter by name" autofocus>
+          </form>
         </div>
-      <% end %>
+        <ul ng-repeat="label in labels | filter: query | orderBy: 'name' ">
+          <div class="row label-row">
+            <div class="col-md-4">
+              <h3><span class="label label-info">{{label.name}}</span></h3>
+            </div>
+          </div>
+        </ul>
+      </div>
     </div>
-    <% end %>
-  <% end %>
+  </div>
 </div>
 
 
