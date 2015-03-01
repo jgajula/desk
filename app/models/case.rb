@@ -1,11 +1,10 @@
 class Case
-  include SalesforceApi
 
   def self.fetch(id)
-    callapi(:get, "filters/#{id.to_i.to_s}/cases")
+    Desk.filter_cases(id).raw._embedded[:entries]
   end
 
   def self.update(id, attributes)
-    callapi(:patch, "cases/#{id.to_i.to_s}", attributes)
+    Desk.update_case(id, attributes)
   end
 end

@@ -21,7 +21,7 @@
                 <div class="case_new_label">
                   <%= form_tag case_path(c.id) do %>
                     <%= label_tag "labels", "Label: " %>
-                    <%= select_tag "labels", options_from_collection_for_select(labels, :name, :name), include_blank: true, class: "case_label_select", id: "case_labels_#{c.id}" %>
+                    <%= select_tag "labels", options_for_select(labels), include_blank: true, class: "case_label_select", id: "case_labels_#{c.id}" %>
                   <% end %>
                 </div>
               <% end %>

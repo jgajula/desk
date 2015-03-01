@@ -30156,8 +30156,8 @@ var app = angular.module("LabelApp", []);
 app.controller("LabelCtrl", function($scope, $http) {
 
   $http.get("/labels").success(function(data){
-    var new_labels = $.map(data,function(entry){
-      return {"name" : entry.data.name};
+    var new_labels = $.map(data.entries,function(entry){
+      return {"name" : entry.name};
     });
     $scope.labels = new_labels;
   }).error(function(){

@@ -8,6 +8,6 @@ module ApplicationHelper
   end
 
   def available_labels(labels)
-    @labels.reject {|l| labels.include? l.name }
+    @labels.reject {|l| labels.include? l }
   end
 end

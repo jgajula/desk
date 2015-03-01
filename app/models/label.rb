@@ -1,14 +1,13 @@
 class Label
-  include SalesforceApi
 
   GROUP = 3
   PARAM = ["name", "description"]
 
   def self.fetch()
-    callapi(:get, "labels")
+    Desk.labels.raw._embedded
   end
 
   def self.create(attributes)
-    callapi(:post, "labels", attributes)
+    Desk.create_label(attributes)
   end
 end

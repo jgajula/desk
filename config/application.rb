@@ -17,6 +17,16 @@ SALESFORCE.symbolize_keys!
 
 module Salesforce
   class Application < Rails::Application
+
+   # Desk gem configuration loaded from corresponding environment
+    Desk.configure do |config|
+      config.support_email = SALESFORCE[:support_email]
+      config.subdomain = SALESFORCE[:subdomain]
+      config.consumer_key = SALESFORCE[:api_key]
+      config.consumer_secret = SALESFORCE[:api_secret]
+      config.oauth_token = SALESFORCE[:access_token]
+      config.oauth_token_secret = SALESFORCE[:access_token_secret]
+    end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

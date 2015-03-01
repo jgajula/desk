@@ -1,11 +1,6 @@
 class Filter
-  include SalesforceApi
-
-  def id
-    @data["_links"]["self"]["href"][/\d+$/]
-  end
 
   def self.fetch()
-    callapi(:get, "filters")
+    Desk.filters.raw._embedded[:entries]
   end
 end

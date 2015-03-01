@@ -1,5 +1,6 @@
 development:
-  site: https://jagadeeshgajula.desk.com
+  support_email: jagadish.d.one@gmail.com
+  subdomain: jagadeeshgajula
   version: 2
   api_key: 6nKNSj8XJmIxnGLymw3g
   api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
@@ -8,7 +9,8 @@ development:
 
 
 test:
-  site: https://jagadeeshgajula.desk.com
+  support_email: jagadish.d.one@gmail.com
+  subdomain: jagadeeshgajula
   version: 2
   api_key: 6nKNSj8XJmIxnGLymw3g
   api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
@@ -17,7 +19,8 @@ test:
 
 
 production:
-  site: https://jagadeeshgajula.desk.com
+  support_email: jagadish.d.one@gmail.com
+  subdomain: jagadeeshgajula
   version: 2
   api_key: 6nKNSj8XJmIxnGLymw3g
   api_secret: aSsRGh8zeCrGYafsKdLr06sJp76fPltIkkM5t4ec
