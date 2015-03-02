@@ -8,6 +8,7 @@ module ApplicationHelper
   end
 
   def available_labels(labels)
-    @labels.reject {|l| labels.include? l }
+    all_labels = @labels[:entries].map{|l| l.name}
+    all_labels.reject{|a| labels.include? a}
   end
 end
