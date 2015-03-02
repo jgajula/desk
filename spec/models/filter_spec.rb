@@ -19,25 +19,5 @@ describe Filter do
       expect(@filters.length).to eq 10
     end
 
-    it "returns an Array of Case objects" do
-      @filters.each do |f|
-        expect(f.class).to eq Filter
-      end
-    end
-  end
-
-  context ".new" do
-    before do
-      @filter = subject.new(FILTER_HASH)
-    end
-
-    it "takes a hash and returns its id via its getter method" do
-      expect(@filter.id).to eq "2026388"
-    end
-
-    it "takes a hash and attributes can be accessed via method missing" do
-      expect(@filter.name).to eq "Inbox"
-      expect(@filter.active).to eq true
-    end
   end
 end

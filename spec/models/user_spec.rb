@@ -16,7 +16,6 @@ describe User do
     end
 
     it "returns a valid user object" do
-      expect(@user.class).to eq User
       expect(@user.name).to eq "Jagadeesh Gajula"
     end
   end
