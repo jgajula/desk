@@ -15,13 +15,14 @@ Checkout the live application at https://lit-harbor-1107.herokuapp.com/
 
        1. Ruby
        2. Ruby on Rails
-       3. Rspec
-       4. Desk.com API
-       5. Bootstrap
-       6. Javascript
-       7. CSS
-       8. Github
-       9. Heroku
+       3. Angular
+       4. Desk.com API visa Desk gem
+       5. Rspec
+       6. Bootstrap
+       7. Javascript
+       8. CSS
+       9. Github
+       10. Heroku
 
 
 # Key Features
@@ -30,10 +31,11 @@ Checkout the live application at https://lit-harbor-1107.herokuapp.com/
        2. Good test coverage using Rspec
        3. Consistent naming conventions followed
        4. Code works as expected
-       5. Intuitive use experience provided
-       6. Code is well commented with useful information
-       7. Knowledge of git version system demonstrated(github)
-       8. Knowledge of cloud deployments demonstrated(heroku)
+       5. Angular JS for filtering labels
+       6. Intuitive use experience provided
+       7. Code is well commented with useful information
+       8. Knowledge of git version system demonstrated(github)
+       9. Knowledge of cloud deployments demonstrated(heroku)
 
 
 # Filters and Cases
@@ -59,10 +61,20 @@ Checkout the live application at https://lit-harbor-1107.herokuapp.com/
 
 # Show available labels
 
-![alt tag](https://openmerchantaccount.com/img/Screen%20Shot%202015-02-26%20at%209.31.17%20AM.png)
+![alt tag](https://openmerchantaccount.com/img/Screen Shot 2015-03-01 at 9.26.37 PM.png)
 
         - This page lists all the available labels
         - This page lets you add a new label
+
+# Angular JS Filter
+
+![alt tag](https://openmerchantaccount.com/img/Screen Shot 2015-03-01 at 9.27.07 PM.png)
+
+        - Angular JS used for intuitively filtering labels
+        - UI gets updated as you start typing in filter input box
+
+
+
 
 
 
